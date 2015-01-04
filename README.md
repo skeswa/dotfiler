@@ -10,13 +10,13 @@ Getting going weith dotfiler is pretty straight forward. All you have to do is `
 ### Tracking Dotfiles
 Whenever you want dotfiler to start tracking a dotfile, simply use ```dotfiler track```. For example, if I wanted to start tracking my `.vimrc`, so that I could keep track of my vim configuration, then I would just type into my shell 
 ```sh
-$ dotfiler add .vimrc
+$ dotfiler track .vimrc
 ``` 
 You may have noticed that dotfiler just _assumes_ that you're talking about your home directory. So, `.vimrc` is simply interpreted as `~/.vimrc`.
 ### Untracking Dotfiles
 To get dotfiler to stop tracking a file, ```dotfiler untrack``` will do the trick. To continue with the previous example, if I wanted dotfiler to forget about my `.vimrc`, I would intuitively type
 ```sh
-$ dotfiler remove .vimrc
+$ dotfiler untrack .vimrc
 ```
 ### Syncing Dotfiles
 If your dotfiles are changed remotely, or if you simply are setting up in a fresh environment, all you have to do is call ```dotfiler sync```. Dotfiler will take care of the rest, asking you to resolve any conflicts in a swift and efficient manner.
